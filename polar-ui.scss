@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700,800");
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+/* Table Unerivsal */
+table {
+  width: calc( 100% - 40px );
+  margin: 40px 20px;
+}
+
+table td, table th {
+  padding: 20px 20px;
+}
+
+
+table th {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+table tbody tr:hover {
+  background: white;
+}
+
+/* Gradient Text */
+.gradient {
+  display: inline-block;
+  color: #148ff5;
+  background: linear-gradient(90deg, #148ff5, #00b3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+button, input[type=submit] {
+  font-family: 'Nunito', sans-serif;
+  font-size: 13.5pt;
+  letter-spacing: 0.5px;
+  border-radius: 50px;
+  padding: 10px 30px;
+  background: #148ff5;
+  background: linear-gradient(90deg, #148ff5, #00b3ff), #148ff5;
+  color: white;
+  border: none;
+  box-shadow: 2px 3px 10px rgba(20, 143, 245, 0.2), -2px 3px 10px rgba(0, 179, 255, 0.2);
+  transition: all .2s ease-in-out;
+}
+
+button:hover, input:hover[type=submit] {
+  box-shadow: 3px 4px 15px rgba(20, 143, 245, 0.3), -3px 3px 15px rgba(0, 179, 255, 0.3);
+  transform: scale(1.05);
+}
+
+button.white, input[type=submit].white {
+  background: white;
+  color: black;
+  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.05), -2px 3px 20px rgba(0, 0, 0, 0.05);
+}
+
+button.white:hover, input[type=submit].white:hover {
+  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.08), -2px 3px 20px rgba(0, 0, 0, 0.08);
+}
+
+input, textarea {
+  border-radius: 25px;
+  border: 1px solid #148ff5;
+  font-size: 13.5pt;
+  padding: 10px 20px;
+  transition: all .2s ease-in-out;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input:focus, input:hover, textarea:focus, textarea:hover {
+  focus: none;
+  box-shadow: 3px 4px 15px rgba(20, 143, 245, 0.3), -3px 3px 15px rgba(0, 179, 255, 0.3);
+  outline: none;
+}
+
+input:focus, input:hover {
+  transform: scale(1.05);
+}
+
+input.disable-hover:focus, input.disable-hover:hover {
+  transform: scale(1);
+  box-shadow: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: #148ff5 !important;
+}
+
+a:hover {
+  color: #148ff5 !important;
+  cursor: default;
+}
+
+r {
+  opacity: 0.5;
+}
